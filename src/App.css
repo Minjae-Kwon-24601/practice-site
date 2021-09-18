@@ -28,6 +28,13 @@
   color: #61dafb;
 }
 
+#App-link {
+  color: rgb(0, 174, 255);
+  font-size: xx-large;
+  flex-wrap: wrap-reverse;
+  max-width: 100 px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
