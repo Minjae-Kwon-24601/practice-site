@@ -1,38 +1,82 @@
 .App {
-  text-align: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(rgba(2, 0, 36, 1) 0%, rgba(19, 5, 56, 1) 25%, rgba(0, 83, 99, 1) 100%);
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page {
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* NavBar CSS */
+nav.navbar {
+  padding: 25px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  transition: 0.32s ease-in-out;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+nav.navbar.scrolled {
+  padding: 15px 0;
+  background-color: #121212;
+}
+
+.nav-link {
+  color: #c2bdba;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.nav-link.navbar-link.active {
+  color: #fff;
+}
+
+.icons {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.icons a {
+  width: 45px;
+  height: 45px;
+  background: rgba(217, 217, 217, 0.1);
+  display: inline-flex;
+  border-radius: 50%;
+  margin-right: 15px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  line-height: 1;
+  border: 1px solid #c2bdba;
 }
 
-.App-link {
-  color: #61dafb;
+.icons a::before {
+  content: "";
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icons a:hover::before {
+  transform: scale(1);
 }
+
+.icons a img {
+  width: 60%;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.icons a:hover img {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
+/* Home CSS */
