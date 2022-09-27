@@ -1,6 +1,6 @@
 function Contact(props) {
     return (
-        <div className="page">
+        <div className="page" id="contact">
             This is Contact
         </div>
     );

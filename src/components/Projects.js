@@ -1,6 +1,6 @@
 function Projects(props) {
     return (
-        <div className="page">
+        <div className="page" id="projects">
             This is Projects
         </div>
     );

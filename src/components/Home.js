@@ -1,6 +1,6 @@
 function Home(props) {
     return (
-        <div className="page">
+        <div className="page" id="home">
             This is the Home
         </div>
     );
